@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import { Modal, Form, Button } from "react-bootstrap";
-import { useBudgets } from "../contexts/BudgetsContext";
+import { Modal, Form } from "react-bootstrap";
+import { useBudgets } from "../../contexts/BudgetsContext";
+import Button from "../UI/Button";
 
 const AddBudgetModal = ({ show, handleClose }) => {
   const nameRef = useRef();
@@ -38,7 +39,7 @@ const AddBudgetModal = ({ show, handleClose }) => {
             />
           </Form.Group>
           <div className="d-flex justify-content-end">
-            <Button variant="primary" type="sumbit">
+            <Button variant="primary" type="submit" >
               Add
             </Button>
           </div>

@@ -1,0 +1,35 @@
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* d-flex align-items-baseline */
+.card-amount {
+  font-size: 1.25rem;
+  font-weight: 600;;
+  display: flex;
+  align-items: baseline;
+}
+
+.card-total {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #8e8e8e;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.buttons-container button {
+  margin-left: 0.5rem;
+}

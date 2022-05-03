@@ -1,4 +1,4 @@
-import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "../contexts/BudgetsContext"
+import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "../../contexts/BudgetsContext"
 import BudgetCard from "./BudgetCard"
 
 const UncategorizedBudgetCard = (props) => {
@@ -9,7 +9,7 @@ const UncategorizedBudgetCard = (props) => {
   )
   if (amount === 0) return null
 
-  return <BudgetCard amount={amount} name="Uncategorized" gray {...props} />
+  return <BudgetCard amount={amount} name="Uncategorized" uncategorized {...props} />
 }
 
 export default UncategorizedBudgetCard;

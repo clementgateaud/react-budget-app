@@ -1,0 +1,47 @@
+.button {
+  border-style: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.primary {
+  background-color: #7371FC;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #5a58d4;
+}
+
+.primary-outline {
+  border: solid 1px #7371FC;
+  color: #7371FC;
+  background-color: transparent;
+}
+
+.primary-outline:hover {
+  color: white;
+  background-color: #7371FC;
+}
+
+.secondary {
+  background-color: #8e8e8e;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #686868;
+  color: white;
+}
+
+.secondary-outline {
+  border: solid 1px #8e8e8e;
+  color: #8e8e8e;
+  background-color: transparent;
+}
+
+.secondary-outline:hover {
+  color: white;
+  background-color: #8e8e8e;
+}
