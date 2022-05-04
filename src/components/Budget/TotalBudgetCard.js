@@ -8,7 +8,10 @@ const TotalBudgetCard = () => {
   if (max === 0) return null;
 
   return (
-    <BudgetCard amount={amount} name="Total" total max={max} hideButtons />
+    <>
+      <hr />
+      <BudgetCard amount={amount} name="Total" total max={max} hideButtons />
+    </>
   );
 };
 

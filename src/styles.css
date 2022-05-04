@@ -5,3 +5,9 @@ body {
 html {
   margin: 0px;
 }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0px;
+}

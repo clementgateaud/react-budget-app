@@ -5,31 +5,28 @@ import TotalBudgetCard from "./TotalBudgetCard";
 import UncategorizedBudgetCard from "./UncategorizedBudgetCard";
 import { UNCATEGORIZED_BUDGET_ID } from "../../contexts/BudgetsContext";
 import Container from "../UI/Container";
+import { useBudgets } from "../../contexts/BudgetsContext";
 
 const Budgets = (props) => {
+  const { budgets, getBudgetExpenses } = useBudgets();
   return (
     <Container>
-      <div className={classes["budgets-container"]}>
+      <div className={classes["budgets-header-container"]}>
         <h1>My budgets</h1>
-        <div className={classes["budgets-buttons"]}>
+        <div className={classes["budgets-header-buttons"]}>
           <Button
             variant="primary"
             onClick={() => props.setShowAddBudgetModal(true)}
           >
             Add Budget
           </Button>
-          <Button variant="primary-outline" onClick={props.openAddExpenseModal}>
-            Add Expense
-          </Button>
         </div>
       </div>
       <div className={classes["budget-cards"]}>
-        {props.budgets.map((budget) => {
-          const amount = props
-            .getBudgetExpenses(budget.id)
-            .reduce((acc, curr) => {
-              return acc + curr.amount;
-            }, 0);
+        {budgets.map((budget) => {
+          const amount = getBudgetExpenses(budget.id).reduce((acc, curr) => {
+            return acc + curr.amount;
+          }, 0);
           return (
             <BudgetCard
               key={budget.id}
@@ -44,13 +41,12 @@ const Budgets = (props) => {
           );
         })}
         <UncategorizedBudgetCard
-          onAddExpenseClick={props.openAddExpenseModal}
+          onAddExpenseClick={() => props.openAddExpenseModal}
           onViewExpensesClick={() =>
             props.setViewExpensesModalBudgetId(UNCATEGORIZED_BUDGET_ID)
           }
         />
       </div>
-      <hr />
       <TotalBudgetCard />
     </Container>
   );

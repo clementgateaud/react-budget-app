@@ -1,11 +1,11 @@
-.budgets-container {
+.budgets-header-container {
   display: flex;
   margin: 20px 0px;
   align-items: center;
   justify-content: space-between;
 }
 
-.budgets-buttons button {
+.budgets-header-buttons button {
   margin-left: 0.5rem;
 }
 

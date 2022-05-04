@@ -1,0 +1,30 @@
+.expenses-header-container {
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expenses-header-buttons button {
+  margin-left: 0.5rem;
+}
+
+.expense-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-description {
+  margin: 0px;
+  font-weight: 600;
+  color: #7371FC;
+}
+
+.expense-budget {
+  font-weight: normal;
+  color: black;
+}
+
+.expenses hr {
+  height: 2px;
+}

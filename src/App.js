@@ -4,15 +4,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddBudgetModal from "./components/Budget/AddBudgetModal";
 import AddExpenseModal from "./components/Expense/AddExpenseModal";
 import ViewExpensesModal from "./components/Expense/ViewExpensesModal";
-import { useBudgets } from "./contexts/BudgetsContext";
 import Budgets from "./components/Budget/Budgets";
+import TopExpenses from "./components/Expense/TopExpenses";
+import { useBudgets } from "./contexts/BudgetsContext";
 
 const App = () => {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false);
   const [showAddExpenseModal, setShowAddExpenseModal] = useState(false);
   const [viewExpensesModalBudgetId, setViewExpensesModalBudgetId] = useState();
   const [addExpenseModalBudgetId, setAddExpenseModalBudgetId] = useState();
-  const { budgets, getBudgetExpenses } = useBudgets();
+  const { expenses } = useBudgets();
 
   const openAddExpenseModal = (budgetId) => {
     setShowAddExpenseModal(true);
@@ -29,12 +30,13 @@ const App = () => {
               <>
                 {" "}
                 <Budgets
-                  openAddExpenseModal={openAddExpenseModal}
                   setShowAddBudgetModal={setShowAddBudgetModal}
-                  budgets={budgets}
-                  getBudgetExpenses={getBudgetExpenses}
                   setViewExpensesModalBudgetId={setViewExpensesModalBudgetId}
+                  openAddExpenseModal={openAddExpenseModal}
                 />
+                {expenses.length > 0 && <TopExpenses
+                  openAddExpenseModal={openAddExpenseModal}
+                />}
                 <AddBudgetModal
                   show={showAddBudgetModal}
                   handleClose={() => setShowAddBudgetModal(false)}

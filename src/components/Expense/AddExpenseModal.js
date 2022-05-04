@@ -45,7 +45,7 @@ const AddExpenseModal = ({ show, handleClose, defaultBudgetId }) => {
               step={0.01}
             />
           </div>
-          <div className={classes["form-group"]} controlId="budgetId">
+          <div className={classes["form-group"]}>
             <label htmlFor="budget">Budget</label>
             <select
               defaultValue={defaultBudgetId}
