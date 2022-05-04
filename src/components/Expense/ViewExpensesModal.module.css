@@ -1,0 +1,18 @@
+.expense-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.expense-right {
+  display: flex;
+  align-items: center;
+}
+
+.expense-right button {
+  margin-left: 0.5rem;
+}
+
+.modal-title {
+  margin-right: 0.75rem;
+}

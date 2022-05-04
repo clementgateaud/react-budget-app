@@ -3,6 +3,7 @@
   padding: 10px 15px;
   border-radius: 3px;
   transition: 0.3s;
+  font-size: 1rem;
 }
 
 .primary {
@@ -44,4 +45,15 @@
 .secondary-outline:hover {
   color: white;
   background-color: #8e8e8e;
+}
+
+.danger-outline {
+  border: solid 1px #dc3545;
+  color: #dc3545;
+  background-color: transparent;
+}
+
+.danger-outline:hover {
+  color: white;
+  background-color: #dc3545;
 }

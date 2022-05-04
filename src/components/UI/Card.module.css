@@ -1,4 +1,4 @@
-.card{
+.card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 3px;
   padding: 15px 20px;
@@ -10,7 +10,7 @@
 
 .total {
   background-color: #f7f7ff;
-  border: 1px solid black;
+  border: 1px solid #8e8e8e;
 }
 
 .overbudget {

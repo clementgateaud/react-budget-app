@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import BudgetCard from "./components/Budget/BudgetCard";
 import AddBudgetModal from "./components/Budget/AddBudgetModal";
-import AddExpenseModal from "./components/AddExpenseModal";
+import AddExpenseModal from "./components/Expense/AddExpenseModal";
 import UncategorizedBudgetCard from "./components/Budget/UncategorizedBudgetCard";
 import TotalBudgetCard from "./components/Budget/TotalBudgetCard";
-import ViewExpensesModal from "./components/ViewExpensesModal";
+import ViewExpensesModal from "./components/Expense/ViewExpensesModal";
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext";
 import Button from "./components/UI/Button";
 

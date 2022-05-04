@@ -63,11 +63,7 @@ const BudgetCard = (props) => {
       )}
       {!hideButtons && (
         <div className={classes["buttons-container"]}>
-          <Button
-            variant="primary-outline"
-            className="ms-auto"
-            onClick={onAddExpenseClick}
-          >
+          <Button variant="primary-outline" onClick={onAddExpenseClick}>
             Add Expense
           </Button>
           <Button onClick={onViewExpensesClick} variant="secondary-outline">

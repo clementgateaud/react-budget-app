@@ -1,0 +1,26 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.form-group select {
+  background-color: #ffffff;
+  border: solid 1px #7371fc;
+  border-radius: 2px;
+}
+
+.form-group input {
+  background-color: #ffffff;
+  border: solid 1px #7371fc;
+  border-radius: 2px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}

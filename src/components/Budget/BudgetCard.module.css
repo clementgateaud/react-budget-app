@@ -13,7 +13,7 @@
 /* d-flex align-items-baseline */
 .card-amount {
   font-size: 1.25rem;
-  font-weight: 600;;
+  font-weight: 600;
   display: flex;
   align-items: baseline;
 }
